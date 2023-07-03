@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 1;
+        }
+        footer {
+            background-color: rgb(2, 2, 53);
+    
+        }
+        .footer {
+            display: flex;
+            padding: 123px 122px;
+             justify-content: space-evenly; 
+            
+        }
+        .footer ul{
+            list-style: none;
+            /* justify-content: space-evenly;  */
+        }
+        footer .footer-rights{
+             text-align: center;
+             color: grey;
+             padding: 12px 0;
+
+        }
+
+        body {
+            background-color: rgb(1, 1, 16);
+            color: white;
+            font-family: 'popins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 52);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li:hover {
+            color: rgb(142, 142, 193);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(212, 140, 212);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 0px;
+        }
+        .leftsection .buttons{
+            padding: 25px;
+        }
+        .leftsection .btn{
+            padding: 12px;
+            background-color: rgb(115, 115, 194);
+            color: aliceblue;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftsection img {
+            /* background-color: rgb(35, 2, 2); */
+            width: 100%;
+            margin: 0px;
+            
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin:  0;
+        
+
+        }
+
+        .purpule {
+            color: rgb(108, 53, 108);
+            font-size: 3rem;
+
+        }
+
+        .violet {
+            color: rgb(224, 152, 224);
+            font-size: 3rem;
+        }
+
+        .second-section {
+            max-width: 80vw;
+            margin: auto;
+            height: 8vh;
+            margin: 10px;
+        }
+
+        .second-section h1{
+            font-size: 3rem;
+        }
+       
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Manisha's portfolio</div>
+            <div class="right">
+                <ul>
+                    <a href="/">
+                        <li>Home</li>
+                    </a>
+                    <a href="/">About</li></a>
+                    <a href="/">
+                        <li>Service</li>
+                    </a>
+                    <a href="/">
+                        <li>Projects</li>
+                    </a>
+                    <a href="/">
+                        <li>Contact Me <br> 8591263060</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <img src="logo.jpeg" alt="">
+                heyy...., <span class="purpule">Manisha</span>
+                here <span class="violet">and i am Web Developer</span>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button> 
+                    <button class="btn">Visit Github</button> 
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="img.jpeg" alt="">
+            </div>
+        </section>
+        <hr>
+            <h1><span>What I Have Done So Far....</span></h1>
+           
+
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="web.jpeg" alt="">
+                    <div class="vertical-title">
+                    </div>
+                    <div div class="section">
+                        <h1><span>My Skills</span></h1>
+                        <ul>
+                            <li>Python<br /> <progress min="0" max="100" value="95"></progress> </li>
+                            <li>PHP <br /> <progress min="0" max="100" value="75"></progress> </li>
+                            <li>Coding<br /> <progress min="0" max="100" value="100"></progress> </li>
+                            <li>Html<br /> <progress min="0" max="100" value="90"></progress> </li>
+                        </ul>
+
+                    </div>
+                </div>
+          </div> 
+
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                <h3>Manisha's Developer portfolio</h3>
+            </div>
+            <div class="footer-Second">
+               <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Education</li>
+                <li>Contact</li>
+               </ul> 
+            </div>
+           copyrights $#169; www.Manisha'a Portfolio.com | All rights reserved
+        </div>
+    </footer>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Designer.', '&amp; Python Developer.'],
+            typeSpeed: 50
+        });
+    </script>
+
+    <body>
+
+</html
